@@ -1,5 +1,47 @@
 <script>
+export default {
+  data() {
+    return {
+      cards: [
+        {
+          frontImg: '/img/1.webp',
+          backImg: '/img/1b.webp',
+          title: 'RELAXED FIT TEE UNISEX',
+        },
 
+        {
+          frontImg: '/img/2.webp',
+          backImg: '/img/2b.webp',
+          title: 'ROSES TEE',
+        },
+
+        {
+          frontImg: '/img/3.webp',
+          backImg: '/img/3b.webp',
+          title: 'VOGLIA DI COLORI PASTELLO'
+        },
+
+        {
+          frontImg: '/img/4.webp',
+          backImg: '/img/4b.webp',
+          title: 'TEE UNISEX'
+        },
+
+        {
+          frontImg: '/img/5.webp',
+          backImg: '/img/5b.webp',
+          title: 'STRIPE BODICE'
+        },
+
+        {
+          frontImg: '/img/6.webp',
+          backImg: '/img/6b.webp',
+          title: 'MAGLIONE - BLACK'
+        }
+      ]
+    }
+  }
+}
 </script>
 
 
@@ -8,12 +50,12 @@
     <div class="main-content">
       <div class="container">
         <ul>
-          <!-- PRIMA CARD -->
-          <li class="col-4">
+          <!-- CARDS -->
+          <li class="col-4" v-for="(card, index) in cards" :key="index">
             <div class="card">
               <figure>
-                <img class="front-img" src="/img/1.webp">
-                <img class="back-img" src="/img/1b.webp">
+                <img class="front-img" :src=cards[index].frontImg>
+                <img class="back-img" :src=cards[index].backImg>
                 <div class="heart">
                   <i class="fa-solid fa-heart"></i>
                 </div>
@@ -27,109 +69,8 @@
               <p class="gray">
                 Levi's
               </p>
-              <h4><a href="">RELAXED FIT TEE UNISEX</a></h4>
+              <h4><a href="">{{ cards[index].title }}</a></h4>
               <p class="red">14,99 &euro; <span class="gray reduced"> 29,99 &euro;</span></p>
-            </div>
-          </li>
-
-          <!-- SECONDA CARD -->
-          <li class="col-4">
-            <div class="card">
-              <figure>
-                <img class="front-img" src="/img/2.webp">
-                <img class="back-img" src="/img/2b.webp">
-                <div class="heart">
-                  <i class="fa-solid fa-heart"></i>
-                </div>
-                <div class="label bg-red">
-                  -30%
-                </div>
-              </figure>
-              <p class="gray">
-                Guess
-              </p>
-              <h4><a href="">ROSES TEE</a></h4>
-              <p class="red">20,99 &euro; <span class="gray reduced"> 29,99 &euro;</span></p>
-            </div>
-          </li>
-          <!-- TERZA CARD -->
-          <li class="col-4">
-            <div class="card">
-              <figure>
-                <img class="front-img" src="/img/3.webp">
-                <img class="back-img" src="/img/3b.webp">
-                <div class="heart">
-                  <i class="fa-solid fa-heart"></i>
-                </div>
-                <div class="label bg-red">
-                  -30%
-                </div>
-              </figure>
-              <p class="gray">
-                Come Zucchero Filato
-              </p>
-              <h4><a href="">VOGLIA DI COLORI PASTELLO</a></h4>
-              <p class="red">129,99 &euro; <span class="gray reduced"> 184,99 &euro;</span></p>
-            </div>
-          </li>
-          <!-- QUARTA CARD -->
-          <li class="col-4">
-            <div class="card">
-              <figure>
-                <img class="front-img" src="/img/4.webp">
-                <img class="back-img" src="/img/4b.webp">
-                <div class="heart">
-                  <i class="fa-solid fa-heart"></i>
-                </div>
-                <div class="label bg-red">
-                  -50%
-                </div>
-                <div class="label bg-green">
-                  Sostenibilità
-                </div>
-              </figure>
-              <p class="gray">
-                Levi's
-              </p>
-              <h4><a href="">TEE UNISEX</a></h4>
-              <p class="red">14,99 &euro; <span class="gray reduced"> 29,99 &euro;</span></p>
-            </div>
-          </li>
-          <!-- QUINTA CARD -->
-          <li class="col-4">
-            <div class="card">
-              <figure>
-                <img class="front-img" src="/img/5.webp">
-                <img class="back-img" src="/img/5b.webp">
-                <div class="heart">
-                  <i class="fa-solid fa-heart"></i>
-                </div>
-              </figure>
-              <p class="gray">
-                Maya Deluxe
-              </p>
-              <h4><a href="">STRIPE BODICE</a></h4>
-              <p class="red">99,99 &euro;</p>
-            </div>
-          </li>
-          <!-- SESTA CARD -->
-          <li class="col-4">
-            <div class="card">
-              <figure>
-                <img class="front-img" src="/img/6.webp">
-                <img class="back-img" src="/img/6b.webp">
-                <div class="heart">
-                  <i class="fa-solid fa-heart"></i>
-                </div>
-                <div class="label green-label-only">
-                  Sostenibilità
-                </div>
-              </figure>
-              <p class="gray">
-                Espirit
-              </p>
-              <h4><a href="">MAGLIONE - BLACK</a></h4>
-              <p class="red">29,99 &euro;</p>
             </div>
           </li>
         </ul>
