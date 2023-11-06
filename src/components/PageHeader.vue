@@ -1,5 +1,11 @@
 <script>
-
+export default {
+  data() {
+    return {
+      genres: ['Donna', 'Uomo', 'Bambini'],
+    }
+  }
+}
 </script>
 
 
@@ -10,9 +16,7 @@
         <div class="row">
           <div class="col-4">
             <ul>
-              <li><a href="">Donna</a></li>
-              <li><a href="">Uomo</a></li>
-              <li><a href="">Bambini</a></li>
+              <li v-for="genre in genres"><a href="">{{ genre }}</a></li>
             </ul>
           </div>
 
