@@ -140,43 +140,49 @@
 
 
 <style scoped lang="scss">
-main .container {
-  position: relative;
-  padding-top: 50px;
-}
+main {
+  .container {
+    position: relative;
+    padding-top: 50px;
+  }
 
-main .col-4 {
-  flex-basis: calc((100% / 12) * 4);
-}
+  .col-4 {
+    flex-basis: calc((100% / 12) * 4);
+  }
 
-main li.col-4 {
-  margin-bottom: 30px;
-  padding: 0 10px;
-}
+  li {
+    &.col-4 {
+      margin-bottom: 30px;
+      padding: 0 10px;
+    }
+  }
 
-main figure {
-  position: relative;
-}
+  figure {
+    position: relative;
+  }
 
-main .card h4 {
-  font-weight: 600;
-}
+  .card {
+    h4 {
+      font-weight: 600;
+    }
+  }
 
-.heart:hover {
-  font-size: 30px;
-  color: #FF0D0B;
-}
+  .heart:hover {
+    font-size: 30px;
+    color: #FF0D0B;
+  }
 
-main a {
-  color: black;
-}
+  a {
+    color: black;
+  }
 
-main .front-img {
-  position: absolute;
-  inset: 0;
-}
+  .front-img {
+    position: absolute;
+    inset: 0;
+  }
 
-main .front-img:hover {
-  opacity: 0;
+  .front-img:hover {
+    opacity: 0;
+  }
 }
 </style>

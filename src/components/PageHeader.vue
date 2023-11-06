@@ -44,30 +44,30 @@ header {
   right: 0;
   left: 0;
   z-index: 99;
-}
 
-a:hover {
-  font-size: 20px;
-}
+  a:hover {
+    font-size: 20px;
+  }
 
-header .container {
-  padding: 10px 0;
-}
+  .container {
+    padding: 10px 0;
+  }
 
-header .row {
-  justify-content: space-between;
-  align-items: center;
-}
+  .row {
+    justify-content: space-between;
+    align-items: center;
+  }
 
-header ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 10px;
-}
+  ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
 
-header figure img {
-  width: 150px;
+  figure img {
+    width: 150px;
+  }
 }
 </style>

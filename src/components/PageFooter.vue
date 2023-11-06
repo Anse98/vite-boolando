@@ -44,38 +44,40 @@ footer {
   min-height: 150px;
   background-color: #1A1A1A;
   color: white;
-}
 
-footer .container {
-  padding-top: 30px;
-}
+  .container {
+    padding-top: 30px;
+  }
 
-footer ul {
-  gap: 10px;
-  margin-top: 10px;
-}
+  ul {
+    gap: 10px;
+    margin-top: 10px;
+  }
 
-footer .row {
-  justify-content: space-between;
-  align-items: center;
-}
+  .row {
+    justify-content: space-between;
+    align-items: center;
+  }
 
-footer h5 {
-  text-align: center;
-}
+  h5 {
+    text-align: center;
+  }
 
-footer .socials a {
-  background-color: white;
-  padding: 3px;
-  color: #1A1A1A;
-}
+  .socials {
+    a {
+      background-color: white;
+      padding: 3px;
+      color: #1A1A1A;
+    }
+  }
 
-footer .section-1 {
-  min-height: 120px;
-  border-bottom: #92958F solid 2px;
-}
+  .section-1 {
+    min-height: 120px;
+    border-bottom: #92958F solid 2px;
+  }
 
-footer .section-2 {
-  min-height: 150px;
+  .section-2 {
+    min-height: 150px;
+  }
 }
 </style>
