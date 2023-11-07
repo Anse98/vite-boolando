@@ -15,7 +15,10 @@ export default {
       <figure>
         <img class="front-img" :src="'/img/' + item.frontImage">
         <img class="back-img" :src="'/img/' + item.backImage">
-        <div class="heart">
+        <div class="heart" v-if="item.isInFavorites">
+          <font-awesome-icon icon="fa-solid fa-heart" />
+        </div>
+        <div class="heart" v-else>
           <font-awesome-icon icon="fa-regular fa-heart" />
         </div>
 
