@@ -1,4 +1,5 @@
 <script>
+
 export default {
   data() {
     return {
@@ -26,7 +27,7 @@ export default {
 
           <div class="col-4">
             <ul>
-              <li><a href="">icon</a></li>
+              <li><a href="">icon<i class="fa-regular fa-user"></i></a></li>
               <li><a href="">icon</a></li>
               <li><a href="">icon</a></li>
             </ul>
@@ -48,6 +49,7 @@ header {
   right: 0;
   left: 0;
   z-index: 99;
+  padding: 0 12px;
 
   a:hover {
     font-size: 20px;

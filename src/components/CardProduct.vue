@@ -1,0 +1,73 @@
+<script>
+export default {
+  props: {
+    item: {
+      type: Object,
+      required: true,
+    }
+  },
+}
+</script>
+
+<template>
+  <li class="col-4">
+    <div class="card">
+      <figure>
+        <img class="front-img" :src="'/img/' + item.frontImage">
+        <img class="back-img" :src="'/img/' + item.backImage">
+        <div class="heart">
+          <i class="fa-solid fa-heart"></i>
+        </div>
+
+        <div class="label bgRed" v-for="(badge, i) in item.badges " :class="{ bgGreen: badge.value === 'Sostenibilità' }">
+          {{ badge.value }}
+        </div>
+
+
+      </figure>
+      <h4><a href="">{{ item.name }}</a></h4>
+      <p class="red">{{ item.price }} &euro;</p>
+    </div>
+  </li>
+</template>
+
+<style lang="scss" scoped>
+.col-4 {
+  flex-basis: calc((100% / 12) * 4);
+}
+
+li {
+  &.col-4 {
+    margin-bottom: 30px;
+    padding: 0 10px;
+  }
+}
+
+figure {
+  position: relative;
+}
+
+.card {
+  h4 {
+    font-weight: 600;
+  }
+}
+
+.heart:hover {
+  font-size: 30px;
+  color: #FF0D0B;
+}
+
+a {
+  color: black;
+}
+
+.front-img {
+  position: absolute;
+  inset: 0;
+}
+
+.front-img:hover {
+  opacity: 0;
+}
+</style>

@@ -44,6 +44,7 @@ footer {
   min-height: 150px;
   background-color: #1A1A1A;
   color: white;
+  padding: 0 12px;
 
   .container {
     padding-top: 30px;
