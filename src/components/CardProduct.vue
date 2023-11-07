@@ -16,7 +16,7 @@ export default {
         <img class="front-img" :src="'/img/' + item.frontImage">
         <img class="back-img" :src="'/img/' + item.backImage">
         <div class="heart">
-          <i class="fa-solid fa-heart"></i>
+          <font-awesome-icon icon="fa-regular fa-heart" />
         </div>
 
         <div class="label bgRed" v-for="(badge, i) in item.badges " :class="{ bgGreen: badge.value === 'Sostenibilità' }">

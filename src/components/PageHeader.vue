@@ -27,9 +27,9 @@ export default {
 
           <div class="col-4">
             <ul>
-              <li><a href="">icon<i class="fa-regular fa-user"></i></a></li>
-              <li><a href="">icon</a></li>
-              <li><a href="">icon</a></li>
+              <li><a href=""><font-awesome-icon icon="fa-regular fa-user" /></a></li>
+              <li><a href=""><font-awesome-icon icon="fa-regular fa-heart" /></a></li>
+              <li><a href=""><font-awesome-icon icon="fa-solid fa-bag-shopping" /></a></li>
             </ul>
           </div>
         </div>

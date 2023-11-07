@@ -19,11 +19,11 @@
           <div class="col-6">
             <h5>Trovaci anche su</h5>
             <ul class="socials">
-              <li><a href=""><i class="fa-brands fa-twitter"></i></a></li>
-              <li><a href=""><i class="fa-brands fa-facebook"></i></a></li>
-              <li><a href=""><i class="fa-brands fa-instagram"></i></a></li>
-              <li><a href=""><i class="fa-brands fa-square-pinterest"></i></a></li>
-              <li><a href=""><i class="fa-brands fa-youtube"></i></a></li>
+              <li><a href=""><font-awesome-icon icon="fa-brands fa-twitter" /></a></li>
+              <li><a href=""><font-awesome-icon icon="fa-brands fa-facebook" /></a></li>
+              <li><a href=""><font-awesome-icon icon="fa-brands fa-instagram" /></a></li>
+              <li><a href=""><font-awesome-icon icon="fa-brands fa-square-pinterest" /></a></li>
+              <li><a href=""><font-awesome-icon icon="fa-brands fa-youtube" /></a></li>
             </ul>
           </div>
         </div>
