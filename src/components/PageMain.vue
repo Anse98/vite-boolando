@@ -1,6 +1,7 @@
 <script>
 import CardProduct from './CardProduct.vue';
-import productCards from '../db.json';
+import { store } from '../store.js';
+
 export default {
   components: {
     CardProduct,
@@ -8,7 +9,7 @@ export default {
 
   data() {
     return {
-      cards: productCards.products
+      store: store,
     }
   },
 
@@ -22,7 +23,7 @@ export default {
       <div class="container">
         <ul>
           <!-- CARDS -->
-          <CardProduct v-for="(card) in cards" :item="card" />
+          <CardProduct v-for="(card) in store.products" :item="card" />
         </ul>
       </div>
     </div>
