@@ -54,6 +54,11 @@ export default {
         <div class="price">
           <p>Prezzo articolo: {{ selectedItem.price }} &euro;</p>
         </div>
+
+        <div v-for=" badge in selectedItem.badges" class="discount">
+          <p v-if="badge.type === 'discount'">Lo sconto di questo prodotto è del <span class="color-red">{{ badge.value
+          }}</span> </p>
+        </div>
       </div>
     </div>
   </main>
@@ -107,6 +112,15 @@ main {
     p {
       padding-bottom: 10px;
       border-bottom: 1px solid lightgray;
+    }
+
+    .discount {
+      padding-top: 10px;
+      line-height: 1.5em;
+
+      .color-red {
+        color: red;
+      }
     }
   }
 }
