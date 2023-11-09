@@ -33,7 +33,8 @@ export default {
 
 
       </figure>
-      <h4><a href="">{{ item.name }}</a></h4>
+      <h4 @click="$emit('show', item)"><a href="#">{{ item.name }}</a></h4>
+      <p class="brand">{{ item.brand }}</p>
       <p class="red">{{ item.price }} &euro;</p>
     </div>
   </li>
@@ -77,5 +78,9 @@ a {
 
 .front-img:hover {
   opacity: 0;
+}
+
+.brand {
+  color: gray;
 }
 </style>
