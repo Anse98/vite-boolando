@@ -61,8 +61,10 @@ export default {
     <div class="wrapper" v-if="modalOpen">
       <div class="modal">
         <div class="modal-content">
-          <h4>{{ name }}</h4>
-          <span class="close-icon" @click="closeModal()"><font-awesome-icon icon="fa-regular fa-circle-xmark" /></span>
+          <div class="title">
+            <h4>{{ name }}</h4>
+            <span class="close-icon" @click="closeModal()"><font-awesome-icon icon="fa-regular fa-circle-xmark" /></span>
+          </div>
         </div>
 
         <div class="brand">
@@ -114,8 +116,14 @@ main {
     z-index: 100;
 
     .modal-content {
+      margin-bottom: 50px;
+      font-size: 20px;
+    }
+
+    .title {
       display: flex;
       justify-content: space-between;
+
 
       .close-icon {
         cursor: pointer;
