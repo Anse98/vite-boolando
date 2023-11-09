@@ -23,6 +23,24 @@ export default {
     closeModal() {
       this.modalOpen = false;
     }
+  },
+
+  computed: {
+    name() {
+      return this.selectedItem.name
+    },
+
+    brand() {
+      return this.selectedItem.brand
+    },
+
+    price() {
+      return this.selectedItem.price
+    },
+
+    badges() {
+      return this.selectedItem.badges
+    }
   }
 
 }
@@ -43,21 +61,21 @@ export default {
     <div class="wrapper" v-if="modalOpen">
       <div class="modal">
         <div class="modal-content">
-          <h4>{{ selectedItem.name }}</h4>
+          <h4>{{ name }}</h4>
           <span class="close-icon" @click="closeModal()"><font-awesome-icon icon="fa-regular fa-circle-xmark" /></span>
         </div>
 
         <div class="brand">
-          <p>Marca: {{ selectedItem.brand }}</p>
+          <p>Marca: {{ brand }}</p>
         </div>
 
         <div class="price">
-          <p>Prezzo articolo: {{ selectedItem.price }} &euro;</p>
+          <p>Prezzo articolo: {{ price }} &euro;</p>
         </div>
 
-        <div v-for=" badge in selectedItem.badges" class="discount">
+        <div v-for=" badge in badges" class="discount">
           <p v-if="badge.type === 'discount'">Lo sconto di questo prodotto è del <span class="color-red">{{ badge.value
-          }}</span> </p>
+          }}</span></p>
         </div>
       </div>
     </div>
